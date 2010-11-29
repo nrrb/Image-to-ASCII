@@ -1,0 +1,37 @@
+Dark Background:
+gdddddddddddddddddddddddddddddddddddd      ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddd`                          `dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddd        MMMMMMMMMMMMMMMMMMMMMM        dddddddddddd`          dddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     `dddddd    MMMMMMMM    `dddddddddddddddddddddddddddddddddd
+dddddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     dd   MMMMMMMMMMMMM    dddddddddddddddddddddddddddddddd
+dddddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     MMMMMMMMMM      MMM      MMMMMMM    dddddddddddddddddddddddddddddd
+ddddddddd`    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMM          `     MMMMMM    ddddddddddddd`              
+dddddddd    MMMMMMMMMMMMMMMMMMMM     MMMMMMMMMMMMM   MMMMMMMMMMM        dddddddd   MMMMMMM   `dddddd          MMMMMMMM  
+dddddd    MMMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMMMMMMMMMMMMM              ddddddd   MMMMMMM    ddddd   MMMMMMMMMMMMMMM  
+ddddd    MMMMMMMMMMMMMMMMMMMMMMMM   MMMMMMMMMMMMMMMMMMMMM          MMMM    ddddd    MMMMMMMMM   `d    MMMMMMMMMMMMMMMM  
+dddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  MMMMMMMMMMMMMM            MMMMMMMMMM   dd    MMMMMMMMMMMMM     MMMMMMMMMMMMMMMMMM  
+ddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                      MMMMMMMMMMMMMMMM      MMMMMM   MMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+dd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM             MMMMMMMMMMMMM  MMMMMMM                MMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 dddddd`   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   MMMMMMMM   dddddddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMM   
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `dddddddddd    MMMMMMMMMMMMMMMMMMMMMMM   
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `dddddddddddd     MMMMMMMMMMMMMMMMMM    d
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   dddddddddddddddd       MMMMMMMMM      ddd
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddddddddddddddd`            ddddddd
+d^   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `ddddddddddddddddddddddddddddddddddddddddd
+dd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddd
+ddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddddddddddddddddddddddddddddddddddddd
+dddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   dddddddddddddddddddddddddddddddddddddddddddd
+ddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    ddddddddddddddddddddddddddddddddddddddddddddd
+dddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddd
+dddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     dddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     ddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddd      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      dddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd^            MMMMMMMMMMMMMMMMMMMM          dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd    dddddd^                        ^      ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd   ddddddddddddddddddddddddddddddddddd    ddddd    dddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd^       dddddddddddddddddddddddddddddddd            ddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddd        ddddddddddddddddddddddddddddddddd^       ddddddddddddddddddddddddddddddddddddddddddddddddddddd
