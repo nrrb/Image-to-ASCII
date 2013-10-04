@@ -1,15 +1,10 @@
-def ASCIIify(image_url, max_columns=80, background_is_dark=False):
-    from PIL import Image, ImageOps
-    import csv
-    from bisect import bisect_left
-    import urllib2
-    import cStringIO
+from PIL import Image, ImageOps
+import csv
+from bisect import bisect_left
+import cStringIO
 
-    ##brightness_list = csv.reader(open('brightnesslist.csv', 'rb'), delimiter=',', quotechar='"')
-    ##char_wt = []
-    ##for row in brightness_list:
-    ##    if row[1]!='':
-    ##        char_wt.append({'char': int(row[1]), 'brightness': float(row[3])})
+def ASCIIify(image_data, max_columns=80, background_is_dark=False):
+
     char_wt = [ {'char': 32, 'brightness': 0.0},\
                {'char': 32, 'brightness': 0.0}, {'char': 96, 'brightness': 1.29}, \
                {'char': 46, 'brightness': 2.44}, {'char': 94, 'brightness': 2.96}, \
@@ -59,8 +54,7 @@ def ASCIIify(image_url, max_columns=80, background_is_dark=False):
                {'char': 35, 'brightness': 13.37}, {'char': 66, 'brightness': 13.37},\
                {'char': 78, 'brightness': 13.5}, {'char': 87, 'brightness': 14.91},\
                {'char': 77, 'brightness': 15.36}]
-    imfile = urllib2.urlopen(image_url)
-    img = cStringIO.StringIO(imfile.read())
+    img = cStringIO.StringIO(image_data)
     im = Image.open(img)
     max_rows = int(0.3 * max_columns);  # as a result of the 8x5 dimensions of the character bounding box
     ascii_size = (max_columns, max_rows)
@@ -116,7 +110,10 @@ def ASCIIify(image_url, max_columns=80, background_is_dark=False):
 
 if __name__ == '__main__':
     # This picture looks horrible both ways
+    with open('saxbig.gif', 'rb') as f:
+        image_data = f.read()
+
     print "Dark Background:"
-    print ASCIIify('http://www.tothebe.at/files/saxbig.gif', 120, True)
+    print ASCIIify(image_data, 120, True)
     print "Light Background:"
-    print ASCIIify('http://www.tothebe.at/files/saxbig.gif', 120, False)
+    print ASCIIify(image_data, 120, False)
