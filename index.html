@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Image-to-ascii by tothebeat</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/tothebeat/Image-to-ASCII">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/tothebeat/Image-to-ASCII/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/tothebeat/Image-to-ASCII/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Image-to-ascii</h1>
+          <p>Rasterizes image files to ASCII art.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/tothebeat">tothebeat</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>This is a script that uses the Python Imaging Library to rasterize image files into ASCII art text files. It chooses characters by average brightness over the character box. </p>
+
+<h2>
+<a name="input" class="anchor" href="#input"><span class="octicon octicon-link"></span></a>Input</h2>
+
+<p><img src="https://raw.github.com/tothebeat/Image-to-ASCII/master/saxbig.gif" alt="saxbig"></p>
+
+<h2>
+<a name="output" class="anchor" href="#output"><span class="octicon octicon-link"></span></a>Output</h2>
+
+<pre><code>Dark Background:
+gdddddddddddddddddddddddddddddddddddd      ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddd`                          `dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddddddd        MMMMMMMMMMMMMMMMMMMMMM        dddddddddddd`          dddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     `dddddd    MMMMMMMM    `dddddddddddddddddddddddddddddddddd
+dddddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     dd   MMMMMMMMMMMMM    dddddddddddddddddddddddddddddddd
+dddddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     MMMMMMMMMM      MMM      MMMMMMM    dddddddddddddddddddddddddddddd
+ddddddddd`    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMM          `     MMMMMM    ddddddddddddd`              
+dddddddd    MMMMMMMMMMMMMMMMMMMM     MMMMMMMMMMMMM   MMMMMMMMMMM        dddddddd   MMMMMMM   `dddddd          MMMMMMMM  
+dddddd    MMMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMMMMMMMMMMMMM              ddddddd   MMMMMMM    ddddd   MMMMMMMMMMMMMMM  
+ddddd    MMMMMMMMMMMMMMMMMMMMMMMM   MMMMMMMMMMMMMMMMMMMMM          MMMM    ddddd    MMMMMMMMM   `d    MMMMMMMMMMMMMMMM  
+dddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  MMMMMMMMMMMMMM            MMMMMMMMMM   dd    MMMMMMMMMMMMM     MMMMMMMMMMMMMMMMMM  
+ddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                      MMMMMMMMMMMMMMMM      MMMMMM   MMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+dd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM             MMMMMMMMMMMMM  MMMMMMM                MMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 dddddd`   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   MMMMMMMM   dddddddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMM  
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMM   
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `dddddddddd    MMMMMMMMMMMMMMMMMMMMMMM   
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `dddddddddddd     MMMMMMMMMMMMMMMMMM    d
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   dddddddddddddddd       MMMMMMMMM      ddd
+d   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddddddddddddddd`            ddddddd
+d^   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   `ddddddddddddddddddddddddddddddddddddddddd
+dd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddd
+ddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   ddddddddddddddddddddddddddddddddddddddddddd
+dddd   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   dddddddddddddddddddddddddddddddddddddddddddd
+ddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    ddddddddddddddddddddddddddddddddddddddddddddd
+dddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddd
+dddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddd    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    dddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     dddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddd     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM     ddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddd      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      dddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd^            MMMMMMMMMMMMMMMMMMMM          dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd    dddddd^                        ^      ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd   ddddddddddddddddddddddddddddddddddd    ddddd    dddddddddddddddddddddddddddddddddddddddddddddddddddd
+ddddddddddddddddd^       dddddddddddddddddddddddddddddddd            ddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddd        ddddddddddddddddddddddddddddddddd^       ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+</code></pre>
+
+<pre><code>Light Background:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;MMMMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;WMMMMMMMMMMMMMMMMMMMMMMMMMMW&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;MMMMMMMM                      MMMMMMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;WMMMMMMMMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;MMMMMM                                  MMMMMW&lt;&lt;&lt;&lt;&lt;&lt;MMMM        MMMMW&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;MMMMM                                          MMMMM&lt;&lt;MMM             MMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;MMMM                                 MMMMM          MMMMMM   MMMMMM       MMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;WMMMM                                   MMMMMM           MMMMMMMMMMWMMMMM      MMMM&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;WMMMMMMMWWWWWWW
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW                    WWWWW             WWW           WWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWW       WWWN&gt;&gt;&gt;&gt;&gt;&gt;WWWWWWWWWW        WW
+&gt;&gt;&gt;&gt;&gt;&gt;WWWW                      WWWWWW                      WWWWWWWWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWW       WWWW&gt;&gt;&gt;&gt;&gt;WWW               WW
+&gt;&gt;&gt;&gt;&gt;WWWW                        WWW                     WWWWWWWWWW    WWWW&gt;&gt;&gt;&gt;&gt;WWWW         WWWN&gt;WWWW                WW
+&gt;&gt;&gt;&gt;WWW                            WW              WWWWWWWWWWWW          WWW&gt;&gt;WWWW             WWWWW                  WW
+&gt;&gt;&gt;WWW                              WWWWWWWWWWWWWWWWWWWWWW                WWWWWW      WWW                             WW
+&gt;&gt;WWW                                 WWWWWWWWWWWWW             WW       WWWWWWWWWWWWWWWW                             WW
+&gt;WWWW                                                          WWWWWWWWWWWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;NWWW                            WW
+&gt;WWW                                                             WWW        WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWW                            WW
+&gt;WWW                                                                        WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW                         WWW
+WWWW                                                                        WWWN&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW                       WWW
+WWWW                                                                        WWWN&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWW                  WWWW&gt;
+&gt;WWW                                                                        WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWWWW         WWWWWW&gt;&gt;&gt;
+&gt;WWW                                                                        WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;NWWWWWWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;#WWW                                                                      WWWN&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;WWWW                                                                    WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;WWW                                                                    WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;WWW                                                                  WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;WWWW                                                              WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;WWWW                                                            WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW                                                        WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW                                                    WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWW                                              WWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWW                                        WWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWWW                                WWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;#WWWWWWWWWWWW                    WWWWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW&gt;&gt;&gt;&gt;&gt;&gt;#WWWWWWWWWWWWWWWWWWWWWWWW#WWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWW&gt;&gt;&gt;&gt;&gt;WWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;#WWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWWWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;WWWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;#WWWWWWW&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
