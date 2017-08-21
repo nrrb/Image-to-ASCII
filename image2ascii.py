@@ -1,7 +1,10 @@
 from PIL import Image, ImageOps
 import csv
 from bisect import bisect_left
-import cStringIO
+try:
+    from cStringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 def ASCIIify(image_data, max_columns=80, background_is_dark=False):
 
@@ -54,7 +57,7 @@ def ASCIIify(image_data, max_columns=80, background_is_dark=False):
                {'char': 35, 'brightness': 13.37}, {'char': 66, 'brightness': 13.37},\
                {'char': 78, 'brightness': 13.5}, {'char': 87, 'brightness': 14.91},\
                {'char': 77, 'brightness': 15.36}]
-    img = cStringIO.StringIO(image_data)
+    img = StringIO(image_data)
     im = Image.open(img)
     max_rows = int(0.3 * max_columns);  # as a result of the 8x5 dimensions of the character bounding box
     ascii_size = (max_columns, max_rows)
