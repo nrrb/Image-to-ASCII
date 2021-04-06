@@ -1,0 +1,8 @@
+title: Image-to-ascii
+description: Rasterizes image files to ASCII art.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
